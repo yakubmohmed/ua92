@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: 'Poppins', sans-serif;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    
+}
+nav{
+    flex: 1;
+    text-align: right;
+    
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color:#555;
+}
+p{
+    color: #555;
+}
+.conatiner{
+    max-width: 1300;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis:50%;
+    min-width: 300px;
+}
+col-2 img{
+    max-width: 100%;
+    padding: 50px;
+}
+.col-2{
+    font-size: 30px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: black;
+    color:red;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border: 30px;
+    transition:  0.5s;
+}
+.btn:hover{
+    background: #563434;
+}
+.header{
+    background: radial-gradient(#fff,);
+
+}
+
+.header .row{
+margin-top: 70;
+}
+
+.categories{
+    margin: 50px 10;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  .col-3 {
+    float: centre;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.small container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{
+    flex-basis: 50%;
+    padding: 30px;
+    min-width: 300px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    align-items: center;
+    width: 100%;
+}
+ .tittle{
+     text-align: center;
+     margin: 0 auto 80px;
+     position: relative;
+     line-height: 60px;
+     color: black;
+ }
+  .tittle::after{
+      content:'';
+      background: #ff523b;
+      width: 80px;
+      height: 5px;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+H4{
+    color:black;
+    font-weight: normal;
+}
+.col-4{
+    font-size: 14PX;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+/*-----------offer---------*/
+ .offer{
+background: radial-gradient(#fff,#ffd6d6);
+padding: 30px;
+}
+
+.offer-img {
+  width: 70%;
+  float: right;
+}
+
+
+.small{
+    color: #555;
+}
+/*----------------------testimonial----------*/
+
+.testimonial{
+    padding: 100px;
+}
+
+
+.col-sm-4{
+    height: 350px;
+	text-align: center;
+	vertical-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+.col-sm-3{
+    height: 350px;
+	text-align: center;
+	vertical-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+#img3{
+    height: 30px;
+}
+
+
+/*-----------------------brands--------------*/
+.brands{
+    margin: 100px auto;
+}
+.col-5{
+    width: 160px;
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-5  img:hover{
+    filter: grayscale(0);
+}
+    
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    
+}
+.footer p{
+color: #fff;
+}
+.footer h3{
+    color:#fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px  0;
+}
+.copyright{
+    text-align: center;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+}
+/*-------------------all products----------*/
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid  red;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
+.page-btn{
+    margin: 0 auto 80px;
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid  red;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.page-btn span:hover{
+    background:red;
+    color:#fff;
+}
+/*------------------single product detail------------------*/
+.col-2 img{
+    margin-left: 250;
+}
+.single-product{
+    margin-top: 80px;
+}
+.single-product .col-2 img{
+    padding: 0;
+
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid red;
+}
+input:focus{
+    outline: none;
+
+}
+.single-product .fa{
+    color: RED;
+    margin-left: 10px;
+}
+
+.col-2 ul{
+
+    font-size: 15;
+    line-height: normal;
+    list-style-type: square;
+}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+    padding: 20px;
+}
+</style>
+.col-sm-8 button{
+    display: inline-block;
+    background: black;
+    color:red;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border: 30px;
+    transition:  0.5s;
+}
+.button:hover{
+    background: #563434;
+}
