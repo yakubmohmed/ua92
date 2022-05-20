@@ -1,0 +1,231 @@
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.checked {
+  color: orange;
+}
+</style>
+        <title> All products- M Store | Mobile website </title>
+        <link rel="stylesheet" href="css/style.css">
+        
+
+    </head>
+    <body>
+
+
+      
+        <div class="conatiner">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="image/MY LOGO.gif" width="85px">
+                </div>
+                <nav>
+                    <ul>
+                     
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Product</a></li>
+                        <li><a href="product details.html">Single product</a></li>
+                        <li><a href="conatct.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <img src="image/cart.png" width="30px" height="30">
+            </div>
+        </div>
+          <!-------------------single product detials-------->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="image/iphone1.jpg" width="500">
+        
+            </div>
+            <div class="col-2">
+                <p>Home/ Phone</p>
+                <h1>I Phone 13 Pro Max </h1>
+                <h4>£1040</h4>
+                
+                <input type="number" value="1">
+                <a href=""class="btn">Add to cart</a>
+                
+                <h3>Product Details <span class="fa fa-indent checked"></span></h3>
+                <ul>
+                    <li>6.1-inch Super Retina XDR display with ProMotion for a faster, more responsive feel.</li>
+                    <li>Cinematic mode adds shallow depth of field and shifts focus automatically in your videos.</li>
+                    <li>Pro camera system with new 12MP Telephoto, Wide, and Ultra Wide cameras; LiDAR Scanner; 6x optical zoom range; macro photography; Photographic Styles, ProRes video, Smart HDR 4, Night mode, Apple ProRAW, 4K Dolby Vision HDR recording.</li>
+                    <li>12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording</li>
+                    <li>A15 Bionic chip for lightning-fast performance</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <div class="small container">
+      
+        <div class="row">
+            
+    <div class="row">
+        <h2>Items for sale</h2>
+        
+		<div class="col-sm-6">
+            <div id="alerts"></div>
+            <div class="productcont">
+					<div class="product">
+						<h3 class="productname">Honor 20 Phone</h3>
+						<img src="image/honor 20.jpeg" width="300" alt="Product Image">
+						<p class="text1">Honor 20 Android smartphone. Announced May 2019. Features 6.26″ display.</p>
+						<p class="price">£199</p>
+						<button class="addtocart">Add To Cart</button>
+					</div>
+
+					<div class="product">
+						<h3 class="productname">iPhone 7 Phone</h3>
+					<img src="image/iphone7.jpg"width=300 alt="Product Image">
+						<p class="text1">The iPhone 7 features a 28mm 12-megapixel camera with optical image stabilization.</p>
+						<p class="price">£129.50</p>
+						<button class="addtocart">Add To Cart</button>
+					</div>
+				
+                    <div class="product">
+                        <h3 class="productname">Samsung S6 Phone</h3>
+                        <img src="image/s 6.jpg" width="300" alt="Product Image">
+                        <p class="text1">Samsung Galaxy S6, Released 2015, 138g, 6.8mm thickness.</p>
+                        <p class="price">£175</p>
+                        <button class="addtocart">Add To Cart</button>
+                    </div>
+                    
+                   
+			</div>
+		</div>
+		<div class="col-sm-6" id="checkout1">
+                <div class="cart-container">
+                  <h2>Cart</h2>
+                  <table>
+                    <thead>
+                      <tr>
+                      <th><strong>Product</strong></th>
+                      <th><strong>Price</strong></th>
+                    </tr>
+                    </thead>
+                    <tbody id="carttable">
+                    </tbody>
+                  </table>
+                  <hr>
+                  <table id="carttotals">
+                    <tr>
+                      <td><strong>Items</strong></td>
+                      <td><strong>Total</strong></td>
+                    </tr>
+                    <tr>
+                      <td>x <span id="itemsquantity">0</span></td>
+                     
+                      <td>£<span id="total">0</span></td>
+                    </tr></table>
+
+                    
+                    <div class="cart-buttons">  
+                        <button id="emptycart">Empty Cart</button>
+                        <button id="checkout" onClick="checkoutNow()">Checkout</button>
+                    </div>
+                    
+                    <div id="checkoutDiv"  style="display:none;" class="answer_list" >
+                        <br><br><br><br>
+                        <h4 style="text-align:center;"><strong>Checkout Now</strong></h4>
+                            <form name="myform" method="post" action="sent.html" >
+                                <ul>
+                                    <li>
+                                        <!-- Create a name field -->
+                                        <label>Full Name:</label>
+                                        <input type="text" name="name" />
+                                    </li>
+                                    <br><br>
+                                    <li>
+                                        <!-- Create an email field -->
+                                        <label>E-mail:</label>
+                                        <input type="email" name="email" />
+                                    </li>
+                                    <br><br>
+                                    <li>
+                                        <!-- Create a message field -->
+                                        <label>Billing Address:</label>
+                                        <textarea name="message" ></textarea>
+                                    </li>
+                                    <br><br>
+                                    <li>
+                                        <!-- Create a message field -->
+                                        <label>Shipping Address:</label>
+                                        <textarea name="message" ></textarea>
+                                    </li>
+                                    <br><br>
+                                    <p>Contratulations this order is free as this is a sandbox website.</p>
+                                    <li>
+                                        <!-- Create a submit button -->
+                                        <input type="submit" value="Checkout Now"> 
+                                    </li>
+                                </ul>
+                            <!-- Close the form tag -->
+                            </form>
+                    </div>
+                </div>
+		</div>
+            
+
+    </div>
+    <div class="row">
+        <div class="col">
+            <hr>
+            <p style="text-align:center;">&copy; 2022 | Food Phones Ltd, all rights reserved.<br></p>
+        </div>
+    </div>
+</div>
+
+<!-- Additional stuff for Bootstrap to work: jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/shop.js"></script>
+</body>
+    <!------------------FOTTER------------>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App For Android and Iso Mobile Phone</p>
+                        <div class="App logo">
+                            <img src="image/play-store.png">
+                            <img src="image/app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                       <img src="image/MY LOGO.gif">
+                        <p>Our purpose Is To Provide Best Smart Phone Available In The Market.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Usefull List</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow US</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2021-22 Yakub Mohmed</p>
+            </div>
+        </div></center>
+        </body>
+</html>
